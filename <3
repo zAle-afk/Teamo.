@@ -1,0 +1,66 @@
+<!DOCTYPE html><html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Una carta para vos</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      background: linear-gradient(#f9f3f0, #ffdde1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Georgia', serif;
+    }.carta {
+  width: 200px;
+  height: 150px;
+  background-color: #fff;
+  border: 2px solid #ff7f7f;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.carta:hover {
+  transform: scale(1.05);
+}
+
+.carta::before, .carta::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.carta::before {
+  top: 0;
+  left: 0;
+  border-width: 0 100px 75px 100px;
+  border-color: transparent transparent #ff7f7f transparent;
+}
+
+.mensaje {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.1em;
+  color: #333;
+  text-align: center;
+}
+
+  </style>
+</head>
+<body>
+  <a href="https://youtu.be/l6YMckfwf2I?si=gPjA5gqpKEWiinVg" target="_blank" style="text-decoration: none;">
+    <div class="carta">
+      <div class="mensaje">Presioná la carta 💌</div>
+    </div>
+  </a>
+</body>
+</html>
